@@ -15,9 +15,7 @@ export function About() {
               <div>
                 <h3 className="text-xl font-bold text-purple-400 mb-2">The Developer</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  A passionate full-stack developer with 5+ years of experience crafting digital experiences. 
-                  Specializing in web applications and game development, I combine technical expertise with 
-                  creative problem-solving to build innovative solutions.
+                A passionate full-stack developer and 3rd-year Computer Science student with hands-on experience through internships and freelance projects. I specialize in building responsive and user-focused applications using React, Node.js, and the MERN stack. From frontend design to backend logic, I enjoy turning ideas into real-world solutions.
                 </p>
               </div>
             </div>
@@ -25,10 +23,9 @@ export function About() {
             <div className="flex items-start space-x-6">
               <Gamepad2 className="w-8 h-8 text-purple-400 flex-shrink-0 mt-1" />
               <div>
-                <h3 className="text-xl font-bold text-purple-400 mb-2">Gaming Background</h3>
+                <h3 className="text-xl font-bold text-purple-400 mb-2">Tech + creativity</h3>
                 <p className="text-gray-300 leading-relaxed">
-                  From pixel art to 3D worlds, my gaming passion drives me to create immersive experiences. 
-                  Experience in Unity and WebGL has shaped my approach to interactive development.
+                To build meaningful digital experiences that solve real-world problems. I aim to grow as a developer by contributing to impactful projects while constantly improving my technical and creative skillset.
                 </p>
               </div>
             </div>
