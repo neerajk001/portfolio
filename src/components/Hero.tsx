@@ -1,4 +1,4 @@
-import React from 'react'
+
 import {Terminal,Linkedin,Github,Mail} from 'lucide-react'
 import Navbar from './Navbar'
 import profileImg from '../images/portfolio-img.png'

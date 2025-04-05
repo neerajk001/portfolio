@@ -3,24 +3,24 @@ import emailjs from '@emailjs/browser';
 import { Send } from 'lucide-react';
 
 export function Contact() {
-  const form = useRef(null);
+    const form = useRef<HTMLFormElement>(null);
   const [isSent, setIsSent] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
     emailjs.sendForm(
       import.meta.env.VITE_EMAILJS_SERVICE_ID,
       import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-      form.current,
+      form.current!,
       import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
     .then(() => {
       setIsSent(true);
       setLoading(false);
-      form.current.reset();
+      form.current ?.reset();
     })
     .catch((error) => {
       console.error('Email send error:', error);
