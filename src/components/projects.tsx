@@ -1,8 +1,8 @@
 
 import { Github, ExternalLink } from "lucide-react"
-
-
-
+import img from '../images/payment.png'
+import recall from '../images/recallhub.png'
+import authImg from '../images/auth.png'
 interface project {
     title: string,
     description: string,
@@ -21,28 +21,28 @@ export function Projects() {
             title: "payment like web-app",
             description: "a core functionalities of the payement app,send and receive money",
             tech: ['html', 'css', 'react', 'node js'],
-            image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800&auto=format&fit=crop&q=60",
+            image:img,
             github: "https://github.com",
-            demo: "https://demo.com"
+            demo: "https://payment-app-orpin.vercel.app/"
 
         },
 
         {
             title: "Recall hub ",
             description: "a core functionalities of the payement app,send and receive money",
-            tech: ['html', 'css', 'react', 'node js'],
-            image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800&auto=format&fit=crop&q=60",
-            github: "https://github.com",
+            tech: ['html', 'css', 'react', 'node js',"typescript", "#fullstack-web-app"],
+            image:recall,
+            github: "https://github.com/neerajk001/brainly-fullstack",
             demo: "https://demo.com"
 
         },
         {
-            title: "Recall hub ",
+            title: "full authentication ",
             description: "a core functionalities of the payement app,send and receive money",
             tech: ['html', 'css', 'react', 'node js'],
-            image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800&auto=format&fit=crop&q=60",
+            image:authImg,
             github: "https://github.com",
-            demo: "https://demo.com"
+            demo: "https://full-authentication.onrender.com/"
 
         },
         {

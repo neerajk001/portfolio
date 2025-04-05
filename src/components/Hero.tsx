@@ -1,6 +1,7 @@
 import React from 'react'
 import {Terminal,Linkedin,Github,Mail} from 'lucide-react'
 import Navbar from './Navbar'
+import profileImg from '../images/portfolio-img.png'
 
 function Hero() {
     console.log("navbar rendered")
@@ -15,7 +16,7 @@ function Hero() {
             <div className='relative z-10 text-center space-y-4 max-w-4xl mx-auto px-4'>
                 <div className='profile-container w-40 h-40 mb-8 rounded-full cursor-pointer overflow-hidden items-center text-center mx-auto'>
                 <img
-            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=800&auto=format&fit=crop&q=60"
+            src={profileImg}
             alt="Profile"
             className="profile-photo w-full h-full object-cover"
           />
