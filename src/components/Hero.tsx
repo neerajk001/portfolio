@@ -22,7 +22,7 @@ function Hero() {
           />
                 </div>
                 <Terminal className="w-16 h-16 text-purple-400 mx-auto animate-pulse" />
-        <h1 className="text-5xl md:text-6xl font-bold cyberpunk-text bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
+        <h1 className="text-2xl md:text-6xl font-bold cyberpunk-text bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600">
           "Hi ,I'am neeraj kushwaha"
         </h1>
         <p className='font-mono font-semibold'>"I love building scalable web apps and solving real-world problems with code."</p>
