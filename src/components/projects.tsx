@@ -30,7 +30,7 @@ export function Projects() {
 
         {
             title: "Recall hub ",
-            description: "a core functionalities of the payement app,send and receive money",
+            description: "ypu can share the links of x post, images, instagram basically its your second memory",
             tech: ['html', 'css', 'react', 'node js',"typescript", "#fullstack-web-app"],
             image:recall,
             github: "https://github.com/neerajk001/brainly-fullstack",
@@ -39,16 +39,16 @@ export function Projects() {
         },
         {
             title: "full authentication ",
-            description: "a core functionalities of the payement app,send and receive money",
-            tech: ['html', 'css', 'react', 'node js'],
+            description: "full raw full stack authentication with forget password using mailtrap",
+            tech: ['html', 'css', 'react', 'node js',"#fullstack","mailtrap"],
             image:authImg,
             github: "https://github.com/neerajk001/full-authentication",
             demo: "https://full-authentication.onrender.com/"
 
         },
         {
-            title: "Recall hub ",
-            description: "a core functionalities of the payement app,send and receive money",
+            title: "todo-app ",
+            description: "a simple todo app where your todo get stored into the local storage with functionality of create update and delete todo",
             tech: ['html', 'css', 'react', 'node js'],
             image: todo,
             github: "https://github.com/neerajk001/react-context-api",
