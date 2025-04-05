@@ -10,8 +10,12 @@ function Navbar() {
         {/* Desktop Navbar */}
         <div className="hidden hover:cursor-pointer  md:flex md:justify-end md:gap-12 md:px-8 md:py-3 text-white justify-center items-center text-center mx-auto">
         
-          <h1 className="text-md text-white font-mono border px-2 py-1 rounded">About Me</h1>
-          <h1 className="text-md text-white font-mono border px-2 py-1 rounded">Projects</h1>
+        <a href="#about" className="text-md text-white font-mono border px-2 py-1 rounded hover:cursor-pointer hover:bg-white hover:text-black transition">
+      About Me
+    </a>
+    <a href="#projects" className="text-md text-white font-mono border px-2 py-1 rounded hover:cursor-pointer hover:bg-white hover:text-black transition">
+       projects
+    </a>
           <h1 className="text-md text-white font-mono border px-2 py-1 rounded">Resume</h1>
         </div>
         {/* mobile view */}
@@ -30,8 +34,18 @@ function Navbar() {
         {/* Mobile Menu */}
         {isOpen && (
           <div className=" md:hidden absolute top-16 right-0 bg-transparent w-[150px] h-[200px] p-4 text-white  rounded-md">
-            <h1 className="py-2 w-18 px-2 rounded-md hover:text-blue-300 hover:bg-gray-600 hover:cursor-pointer">About</h1>
-            <h1 className="py-2 w-18 px-2 rounded-md hover:text-blue-300 hover:bg-gray-600 hover:cursor-pointer">projects</h1>
+           <a href="#about">
+  <h1 className="py-2 w-18 px-2 rounded-md hover:text-blue-300 hover:bg-gray-600 hover:cursor-pointer">
+    About
+  </h1>
+</a>
+
+<a href="#projects">
+  <h1 className="py-2 w-18 px-2 rounded-md hover:text-blue-300 hover:bg-gray-600 hover:cursor-pointer">
+    Projects
+  </h1>
+</a>
+
             <h1 className="py-2 w-18 px-2 rounded-md hover:text-blue-300 hover:bg-gray-600 hover:cursor-pointer">Resume</h1>
           </div>
         )}

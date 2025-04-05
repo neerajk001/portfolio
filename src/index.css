@@ -93,3 +93,7 @@
 .profile-container:hover .profile-photo {
   animation: revealPhoto 0.5s ease-out forwards;
 }
+
+html {
+  scroll-behavior: smooth;
+}

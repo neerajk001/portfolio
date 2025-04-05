@@ -57,7 +57,7 @@ export function Projects() {
 
     ]
 
-    return <section className="py-10 px-4" id="projects">
+    return <section  className="py-10 px-4" id="projects">
         <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold m-12 cyberpunk-text text-center ">
                 Featured projects
