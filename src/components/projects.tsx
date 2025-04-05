@@ -3,6 +3,7 @@ import { Github, ExternalLink } from "lucide-react"
 import img from '../images/payment.png'
 import recall from '../images/recallhub.png'
 import authImg from '../images/auth.png'
+import todo from '../images/Screenshot 2025-04-05 184703.png'
 interface project {
     title: string,
     description: string,
@@ -22,7 +23,7 @@ export function Projects() {
             description: "a core functionalities of the payement app,send and receive money",
             tech: ['html', 'css', 'react', 'node js'],
             image:img,
-            github: "https://github.com",
+            github: "https://github.com/neerajk001/payment-app",
             demo: "https://payment-app-orpin.vercel.app/"
 
         },
@@ -41,7 +42,7 @@ export function Projects() {
             description: "a core functionalities of the payement app,send and receive money",
             tech: ['html', 'css', 'react', 'node js'],
             image:authImg,
-            github: "https://github.com",
+            github: "https://github.com/neerajk001/full-authentication",
             demo: "https://full-authentication.onrender.com/"
 
         },
@@ -49,9 +50,9 @@ export function Projects() {
             title: "Recall hub ",
             description: "a core functionalities of the payement app,send and receive money",
             tech: ['html', 'css', 'react', 'node js'],
-            image: "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?w=800&auto=format&fit=crop&q=60",
-            github: "https://github.com",
-            demo: "https://demo.com"
+            image: todo,
+            github: "https://github.com/neerajk001/react-context-api",
+            demo: "https://my-todo-kappa-fawn.vercel.app/"
 
         }
 
