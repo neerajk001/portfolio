@@ -4,8 +4,8 @@ import img from '../images/payment.png'
 import recall from '../images/recallhub.png'
 import authImg from '../images/auth.png'
 import todo from '../images/Screenshot 2025-04-05 184703.png'
-import VideoModel from "./videoModel";
-import React, { useState } from "react";
+import VideoModel  from "../components/VideoModel"
+import  { useState } from "react";
 interface project {
     title: string,
     description: string,
