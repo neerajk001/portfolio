@@ -4,14 +4,15 @@ import Navbar from './Navbar'
 import profileImg from '../images/portfolio-img.png'
 
 function Hero() {
-    console.log("navbar rendered")
-  return (<>
+    
+  return (
+  <>
   <div className=' relative min-h-screen'>
   <Navbar/>
  
     <div className='  flex justify-center items-center'>
         
-         <div className="absolute inset-0 bg-gradient-to-b from-purple-900/50 to-black/50 z-0" />
+         <div className="absolute inset-0 bg-gradient-to-b from-gray-600 z-0" />
          
             <div className='relative z-10 text-center space-y-4 max-w-4xl mx-auto px-4'>
               

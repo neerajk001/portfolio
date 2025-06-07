@@ -4,6 +4,7 @@ import img from '../images/payment.png'
 import recall from '../images/recallhub.png'
 import authImg from '../images/auth.png'
 import todo from '../images/Screenshot 2025-04-05 184703.png'
+import chat from '../images/chat.jpg'
 import VideoModel  from "../components/VideoModel"
 import  { useState } from "react";
 interface project {
@@ -49,6 +50,17 @@ export function Projects() {
 
 
         },
+         {
+            title: "real time chat app",
+            description: "chat application using scoket.io, you can chat with your friends in real time",
+            tech: [ 'react', 'node js', "typescript","socket.io", "#fullstack-web-app"],
+            image: chat,
+            github: "https://github.com/neerajk001/fullstack-chat_app",
+            demo: "https://demo.com",
+            video:"chat.mp4"
+
+
+        },
         {
             title: "full authentication ",
             description: "full raw full stack authentication with forget password using mailtrap",
@@ -75,7 +87,7 @@ export function Projects() {
             <h2 className="text-4xl font-bold m-12 cyberpunk-text text-center ">
                 Featured projects
             </h2>
-            <div className="grid grid-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-1 md:grid-cols-2 gap-8 ">
                 {projects.map((project, index) => (
                     <div key={index} className="terminal-box group hover:neon-border transition-all duration-300">
                         <div className="relative overflow-hidden rounded-t-lg">
