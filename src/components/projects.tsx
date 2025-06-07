@@ -1,9 +1,11 @@
 
-import { Github, ExternalLink } from "lucide-react"
+import { Github, ExternalLink, Video } from "lucide-react"
 import img from '../images/payment.png'
 import recall from '../images/recallhub.png'
 import authImg from '../images/auth.png'
 import todo from '../images/Screenshot 2025-04-05 184703.png'
+import VideoModel from "./videoModel";
+import React, { useState } from "react";
 interface project {
     title: string,
     description: string,
@@ -11,18 +13,26 @@ interface project {
     image: string,
     github: string,
     demo: string
+    video?: string; // Optional property for video source
 
 }
 
 
 
 export function Projects() {
+    const [isVideoOpen, setIsVideoOpen] = useState(false);
+    const [selectedVideo, setSelectedVideo] = useState("");
+
+    const openVideo = (videoSrc: string) => {
+        setSelectedVideo(videoSrc);
+        setIsVideoOpen(true);
+    };
     const projects: project[] = [
         {
             title: "payment like web-app",
             description: "a core functionalities of the payement app,send and receive money",
             tech: ['html', 'css', 'react', 'node js'],
-            image:img,
+            image: img,
             github: "https://github.com/neerajk001/payment-app",
             demo: "https://payment-app-orpin.vercel.app/"
 
@@ -31,17 +41,19 @@ export function Projects() {
         {
             title: "Recall hub ",
             description: "ypu can share the links of x post, images, instagram basically its your second memory",
-            tech: ['html', 'css', 'react', 'node js',"typescript", "#fullstack-web-app"],
-            image:recall,
+            tech: ['html', 'css', 'react', 'node js', "typescript", "#fullstack-web-app"],
+            image: recall,
             github: "https://github.com/neerajk001/brainly-fullstack",
-            demo: "https://demo.com"
+            demo: "https://demo.com",
+            video:"brainly.mp4"
+
 
         },
         {
             title: "full authentication ",
             description: "full raw full stack authentication with forget password using mailtrap",
-            tech: ['html', 'css', 'react', 'node js',"#fullstack","mailtrap"],
-            image:authImg,
+            tech: ['html', 'css', 'react', 'node js', "#fullstack", "mailtrap"],
+            image: authImg,
             github: "https://github.com/neerajk001/full-authentication",
             demo: "https://full-authentication.onrender.com/"
 
@@ -58,7 +70,7 @@ export function Projects() {
 
     ]
 
-    return <section  className="py-10 px-4" id="projects">
+    return <section className="py-10 px-4" id="projects">
         <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold m-12 cyberpunk-text text-center ">
                 Featured projects
@@ -80,6 +92,14 @@ export function Projects() {
                                     <a href={project.demo} className="p-2 bg-purple-500/80 rounded-full hover:bg-purple-400">
                                         <ExternalLink className="w-6 h-6" />
                                     </a>
+                                    {project.video && (
+                                        <button
+                                            onClick={() => openVideo(project.video!)}
+                                            className="p-2 bg-purple-500/80 rounded-full hover:bg-purple-400"
+                                        >
+                                            <Video className="w-6 h-6" />
+                                        </button>
+                                    )}
                                 </div>
                             </div>
                         </div>
@@ -87,14 +107,17 @@ export function Projects() {
                         <div className="p-6">
                             <h3 className="text-xl font-bold mb-2 text-purple-400">{project.title}</h3>
                             <p className="text-gray-300 mb-4">{project.description}</p>
-                            <div className="flex flex-wrap gap-2">
+                            <div className="flex flex-wrap gap-2 justify-items-end">
                                 {project.tech.map((tech, techIndex) => (
                                     <span key={techIndex}
-                                        className="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full"
+                                        className="px-3 py-1 text-sm bg-purple-500/20 text-purple-300 rounded-full flex inline-flex items-center hover:bg-purple-500/30 transition-colors duration-300"
                                     >
                                         {tech}
+
                                     </span>
                                 ))}
+                                
+
                             </div>
                         </div>
                     </div>
@@ -102,6 +125,11 @@ export function Projects() {
             </div>
 
         </div>
+        <VideoModel
+        isOpen={isVideoOpen}
+        onClose={() => setIsVideoOpen(false)}
+        src={selectedVideo}
+      />
     </section>
 }
 

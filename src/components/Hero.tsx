@@ -1,5 +1,5 @@
 
-import {Terminal,Linkedin,Github,Mail} from 'lucide-react'
+import {Terminal,Linkedin,Github,Mail,Twitter } from 'lucide-react'
 import Navbar from './Navbar'
 import profileImg from '../images/portfolio-img.png'
 
@@ -14,7 +14,10 @@ function Hero() {
          <div className="absolute inset-0 bg-gradient-to-b from-purple-900/50 to-black/50 z-0" />
          
             <div className='relative z-10 text-center space-y-4 max-w-4xl mx-auto px-4'>
-                <div className='profile-container w-40 h-40 mb-8 rounded-full cursor-pointer overflow-hidden items-center text-center mx-auto'>
+              
+                <div className='border-amber-50 profile-container w-40 h-40 mb-8  
+                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-white via-gray-500 to-pink-400  animate-pulse z-0"></div>
+                cursor-pointer overflow-hidden items-center text-center mx-auto'>
                 <img
             src={profileImg}
             alt="Profile"
@@ -41,6 +44,9 @@ function Hero() {
           </a>
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=workwithneeraj.01@gmail.com" className="hover:text-purple-400 transition-colors">
             <Mail className="w-8 h-8" />
+          </a>
+          <a href="https://x.com/kushwaha_012" className="hover:text-purple-400 transition-colors">
+            <Twitter className="w-8 h-8" />
           </a>
         </div>
             </div>

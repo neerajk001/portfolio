@@ -10,13 +10,13 @@ function Navbar() {
         {/* Desktop Navbar */}
         <div className="hidden hover:cursor-pointer  md:flex md:justify-end md:gap-12 md:px-8 md:py-3 text-white justify-center items-center text-center mx-auto">
         
-        <a href="#about" className="text-md text-white font-mono border px-2 py-1 rounded hover:cursor-pointer hover:bg-white hover:text-black transition">
+        <a href="#about" className="text-md bg-blue-800 text-white font-mono border-2 px-2 py-1 rounded-md hover:cursor-pointer hover:bg-white hover:text-black transition">
       About Me
     </a>
-    <a href="#projects" className="text-md text-white font-mono border px-2 py-1 rounded hover:cursor-pointer hover:bg-white hover:text-black transition">
+    <a href="#projects" className="text-md bg-blue-800 text-white font-mono border-2 px-2 py-1 rounded-md hover:cursor-pointer hover:bg-white hover:text-black transition">
        projects
     </a>
-          <h1 className="text-md text-white font-mono border px-2 py-1 rounded">Resume</h1>
+          <h1 className="text-md bg-blue-800 text-white hover:bg-white hover:text-black transition font-mono border-2 px-2 py-1 rounded-md">Resume</h1>
         </div>
         {/* mobile view */}
         <span className="absolute top-4 left-8 md:hidden border-1 flex items-center gap-2 justify-center rounded py-0.5 px-1 hover:cursor-pointer font-semibold text-center">resume  <Download className="items-center mx-auto p-0.5"

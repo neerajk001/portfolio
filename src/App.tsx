@@ -7,9 +7,12 @@ import { Tools } from './components/Tools'
 import { Contact } from './components/Contact'
 
 
+
 function App() {
   return (<>
-    <div className='min-h-screen bg-gray-900 text-white'>
+    <div className='min-h-screen bg-gradient-to-b from-black to-gray-800
+ text-white'>
+     
       <Hero/>
       <About/>
       <Projects/>
