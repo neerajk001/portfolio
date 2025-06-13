@@ -35,7 +35,7 @@ export function Projects() {
             tech: ['html', 'css', 'react', 'node js'],
             image: img,
             github: "https://github.com/neerajk001/payment-app",
-            demo: "https://payment-app-orpin.vercel.app/"
+            demo: "https://payment-app-dacc.vercel.app/"
 
         },
 
