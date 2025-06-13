@@ -30,8 +30,8 @@ export function Projects() {
     };
     const projects: project[] = [
         {
-            title: "payment like web-app",
-            description: "a core functionalities of the payement app,send and receive money",
+            title: "paywave",
+            description: " a payment simulation web app a core functionalities of the payement app,send and receive money",
             tech: ['html', 'css', 'react', 'node js'],
             image: img,
             github: "https://github.com/neerajk001/payment-app",
