@@ -51,7 +51,7 @@ export function Projects() {
 
         },
          {
-            title: "real time chat app",
+            title: " chat app",
             description: "chat application using scoket.io, you can chat with your friends in real time",
             tech: [ 'react', 'node js', "typescript","socket.io", "#fullstack-web-app"],
             image: chat,
